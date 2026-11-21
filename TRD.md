@@ -194,7 +194,7 @@ the page is checked at 360px, 768px and 1280px widths.
 ## 15. Deployment & maintenance
 - **Deploy (demo/portfolio):** copy the folder to any static host, or open `index.html`.
   For GitHub: one repository per project under
-  https://github.com/serviceprovidermanchester named `spm-web-dental-clinic`, with README,
+  https://github.com/serviceprovidermanchester named `Northgate-Dental`, with README,
   PROJECT-DETAILS, PRD and TRD included (this package).
 - **Versioning:** semantic versioning on this TRD/PRD pair; any change to the interactive
   logic in §4.1 requires a TRD revision note and re-running §12 tests.

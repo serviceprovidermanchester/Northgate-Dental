@@ -35,7 +35,7 @@ Open `index.html` directly, or deploy the folder to GitHub Pages / Netlify / any
 **Service tag:** Web Design & Development
 **Label:** Concept Project
 **Summary:** A trust-first clinic website with published fees and an appointment-request flow that confirms instantly — built to convert nervous searchers into booked patients.
-**Links:** GitHub repo `serviceprovidermanchester/spm-web-dental-clinic` (to be created when Ali publishes) · Live demo: this folder / GitHub Pages
+**Links:** GitHub repo `https://github.com/serviceprovidermanchester/Northgate-Dental` · Live demo: this folder / GitHub Pages
 
 ## LinkedIn post draft (for https://www.linkedin.com/company/spmanchester)
 New concept project 🦷 Northgate Dental — a dental clinic website designed around one problem: patients who never book because fees are hidden and the phone is busy. Transparent pricing, gentle-dentistry reassurance and an appointment request that confirms in 60 seconds. Full source code on our GitHub. #WebDesign #Manchester #DentalMarketing #SME

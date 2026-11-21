@@ -28,8 +28,8 @@ This project follows our [Code of Conduct](CODE_OF_CONDUCT.md). By participating
 ```bash
 # 1. Fork the repository on GitHub
 # 2. Clone your fork locally
-git clone https://github.com/YOUR_USERNAME/spm-web-dental-clinic.git
-cd spm-web-dental-clinic
+git clone https://github.com/YOUR_USERNAME/Northgate-Dental.git
+cd Northgate-Dental
 
 # 3. Open the site — no build step required
 open src/index.html   # macOS

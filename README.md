@@ -136,8 +136,8 @@ Experience the full application with live SQLite database, real-time availabilit
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/serviceprovidermanchester/spm-web-dental-clinic.git
-cd spm-web-dental-clinic/backend
+git clone https://github.com/serviceprovidermanchester/Northgate-Dental.git
+cd Northgate-Dental/backend
 
 # 2. Install dependencies & initialize SQLite database
 npm install
@@ -199,7 +199,7 @@ npx serve src
 # 3. Source: "Deploy from a branch"
 # 4. Branch: main / Branch folder: / (root)
 # 5. Save — your site goes live at:
-#    https://<your-username>.github.io/spm-web-dental-clinic/
+#    https://<your-username>.github.io/Northgate-Dental/
 ```
 
 ---
@@ -300,7 +300,7 @@ flowchart TD
 ## 📁 Project Structure
 
 ```
-spm-web-dental-clinic/
+Northgate-Dental/
 │
 ├── src/                              # 📂 Frontend source files
 │   ├── index.html                    # Patient-facing website (semantic HTML5)
@@ -511,7 +511,8 @@ Contributions are welcome! This is an open portfolio project — improvements he
 ```bash
 # 1. Fork the repo on GitHub
 # 2. Clone your fork
-git clone https://github.com/YOUR_USERNAME/spm-web-dental-clinic.git
+git clone https://github.com/YOUR_USERNAME/Northgate-Dental.git
+cd Northgate-Dental
 
 # 3. Create a feature branch
 git checkout -b feat/your-feature-name
@@ -618,7 +619,7 @@ frontend vanilla-js open-source spmanchester
 
 *Made in Manchester 🐝 — where patients deserve better than a phone queue*
 
-**[⭐ Star this repo](https://github.com/serviceprovidermanchester/spm-web-dental-clinic)** to support open-source portfolio work from SPManchester.
+**[⭐ Star this repo](https://github.com/serviceprovidermanchester/Northgate-Dental)** to support open-source portfolio work from SPManchester.
 
 <br/>
 

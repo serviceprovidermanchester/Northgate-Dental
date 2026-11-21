@@ -18,7 +18,7 @@ If you discover a security vulnerability in this project, please report it respo
 ### 📧 Contact
 
 **Email:** [info@spmanchester.com](mailto:info@spmanchester.com)  
-**Subject line:** `[SECURITY] spm-web-dental-clinic — <brief description>`
+**Subject line:** `[SECURITY] Northgate-Dental — <brief description>`
 
 We treat all security reports seriously and will respond promptly.
 
