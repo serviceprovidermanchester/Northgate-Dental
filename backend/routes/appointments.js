@@ -124,7 +124,11 @@ router.get('/', requireAuth, (req, res) => {
   if (date)   { where += ' AND a.preferred_date = ?'; params.push(date); }
 
   const appointments = db.prepare(`
-    SELECT a.*, t.name AS treatment_name, c.name AS clinician_name
+    SELECT a.*,
+           COALESCE(a.guest_name, 'Patient #' || a.id) AS patient_name,
+           COALESCE(a.guest_phone, '—') AS patient_phone,
+           COALESCE(a.guest_email, '—') AS patient_email,
+           t.name AS treatment_name, c.name AS clinician_name
     FROM appointments a
     LEFT JOIN treatments t ON t.id = a.treatment_id
     LEFT JOIN clinicians c ON c.id = a.clinician_id

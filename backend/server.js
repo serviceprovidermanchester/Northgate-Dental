@@ -38,13 +38,34 @@ app.use(helmet({
   crossOriginResourcePolicy: { policy: 'cross-origin' },
 }));
 
-const allowedOrigins = (process.env.CORS_ALLOWED_ORIGINS || 'http://localhost:5500,http://127.0.0.1:5500').split(',');
+const envOrigins = (process.env.CORS_ALLOWED_ORIGINS || '')
+  .split(',')
+  .map(o => o.trim())
+  .filter(Boolean);
+
 app.use(cors({
   origin: (origin, cb) => {
-    if (!origin || allowedOrigins.includes(origin)) return cb(null, true);
-    cb(new Error('Not allowed by CORS'));
+    // Allow requests with no origin (e.g. mobile apps, curl, server-to-server)
+    if (!origin) return cb(null, true);
+
+    // Allow all local dev hosts (localhost or 127.0.0.1 on ANY port, e.g. 3000, 5500, 8080)
+    if (/^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)) {
+      return cb(null, true);
+    }
+
+    // Allow explicitly listed production origins
+    if (envOrigins.includes(origin)) {
+      return cb(null, true);
+    }
+
+    // In development mode, be permissive with local networks
+    if (process.env.NODE_ENV !== 'production') {
+      return cb(null, true);
+    }
+
+    cb(new Error(`Not allowed by CORS: ${origin}`));
   },
-  methods: ['GET','POST','PUT','PATCH','DELETE'],
+  methods: ['GET','POST','PUT','PATCH','DELETE','OPTIONS'],
   allowedHeaders: ['Content-Type','Authorization'],
   credentials: true,
 }));

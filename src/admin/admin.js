@@ -121,14 +121,14 @@ async function apiFetch(path, opts = {}) {
   if (state.token) headers['Authorization'] = `Bearer ${state.token}`;
   const res = await fetch(`${API}${path}`, { ...opts, headers });
 
-  if (res.status === 401) {
+  if (res.status === 401 && path !== '/auth/login') {
     // Token expired or invalid → force logout
     doLogout(true);
     throw new Error('Session expired. Please log in again.');
   }
 
   const data = await res.json().catch(() => ({}));
-  if (!res.ok) throw new Error(data.error || data.message || `HTTP ${res.status}`);
+  if (!res.ok) throw new Error(data.message || data.error || `HTTP ${res.status}`);
   return data;
 }
 
