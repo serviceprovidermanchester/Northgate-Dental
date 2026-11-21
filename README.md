@@ -36,6 +36,28 @@
 
 ---
 
+## 📸 Screenshots & Live Previews
+
+### 🌐 Patient Website (Frontend)
+| Homepage & Hero | Treatments & Transparent Fees |
+|:---:|:---:|
+| [![Homepage Hero](screenshots/01-frontend-hero.png)](screenshots/01-frontend-hero.png) | [![Treatments](screenshots/03-frontend-treatments.png)](screenshots/03-frontend-treatments.png) |
+| **3-Step Appointment Request Engine** | **Verified Reviews & Star Rating** |
+| [![Booking Engine](screenshots/04-frontend-booking.png)](screenshots/04-frontend-booking.png) | [![Patient Reviews](screenshots/05-frontend-reviews.png)](screenshots/05-frontend-reviews.png) |
+
+### 🔒 Staff Management Portal (Backend)
+| Dashboard Overview & Analytics | Appointment Triage & Management |
+|:---:|:---:|
+| [![Admin Dashboard](screenshots/09-admin-dashboard.png)](screenshots/09-admin-dashboard.png) | [![Appointments Table](screenshots/10-admin-appointments.png)](screenshots/10-admin-appointments.png) |
+| **Slot Confirmation Modal** | **Inline Treatment Fee Editor** |
+| [![Confirm Modal](screenshots/11-admin-confirm-modal.png)](screenshots/11-admin-confirm-modal.png) | [![Fee Editor](screenshots/12-admin-treatments.png)](screenshots/12-admin-treatments.png) |
+| **Patient Review Moderation** | **Mobile Responsive Admin View** |
+| [![Review Moderation](screenshots/13-admin-reviews.png)](screenshots/13-admin-reviews.png) | [![Mobile Admin](screenshots/17-admin-mobile-dashboard.png)](screenshots/17-admin-mobile-dashboard.png) |
+
+> 📁 *Full-resolution captures of all 19 views (including full-page scroll and mobile drawers) are saved in the [`screenshots/`](screenshots/) directory.*
+
+---
+
 ## 🌐 Live Demo
 
 | Platform | URL |
