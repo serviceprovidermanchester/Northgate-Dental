@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard — Northgate Dental | SPManchester</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       01  LOGIN SCREEN
+  ═══════════════════════════════════════════════════════════════ -->
+  <div id="login-screen">
+    <div class="login-card">
+      <div class="login-logo">
+        <div class="logo-mark">🦷</div>
+        <h1>Northgate Dental</h1>
+        <p>Staff Portal &amp; Management Dashboard</p>
+      </div>
+
+      <h2>Sign in to continue</h2>
+
+      <div id="login-error" class="hidden" role="alert"></div>
+
+      <form id="login-form" novalidate>
+        <div class="form-group">
+          <label for="admin-email">Staff Email <span class="req">*</span></label>
+          <input
+            type="email"
+            id="admin-email"
+            name="email"
+            class="form-control"
+            required
+            placeholder="admin@northgatedental.co.uk"
+            autocomplete="email"
+            value="admin@northgatedental.co.uk"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="admin-password">Password <span class="req">*</span></label>
+          <input
+            type="password"
+            id="admin-password"
+            name="password"
+            class="form-control"
+            required
+            placeholder="••••••••••••"
+            autocomplete="current-password"
+            value="Admin@NGD2026!"
+          >
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 1rem;">
+          Sign In
+        </button>
+      </form>
+
+      <div class="callout callout-info" style="margin-top: 1.5rem; font-size: 0.8125rem;">
+        <span>ℹ️ <strong>Demo Credentials Pre-filled:</strong><br>
+        <code>admin@northgatedental.co.uk</code> / <code>Admin@NGD2026!</code></span>
+      </div>
+
+      <div class="login-footer">
+        Concept project by <a href="https://spmanchester.com/" target="_blank" rel="noopener">SPManchester Private Limited</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       02  APP SHELL (authenticated)
+  ═══════════════════════════════════════════════════════════════ -->
+  <div id="app-shell" class="hidden">
+
+    <!-- Mobile overlay -->
+    <div id="sidebar-overlay"></div>
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo-mark">🦷</div>
+        <div class="sidebar-title">
+          Northgate Dental
+          <span>Admin Portal</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-label">Practice Management</div>
+        <a class="nav-item active" data-page="dashboard" role="button" tabindex="0">
+          <span class="nav-icon">📊</span>
+          <span>Dashboard</span>
+        </a>
+        <a class="nav-item" data-page="appointments" role="button" tabindex="0">
+          <span class="nav-icon">📅</span>
+          <span>Appointments</span>
+        </a>
+        <a class="nav-item" data-page="treatments" role="button" tabindex="0">
+          <span class="nav-icon">🦷</span>
+          <span>Treatments &amp; Fees</span>
+        </a>
+        <a class="nav-item" data-page="reviews" role="button" tabindex="0">
+          <span class="nav-icon">⭐</span>
+          <span>Patient Reviews</span>
+        </a>
+
+        <div class="nav-section-label">Communications</div>
+        <a class="nav-item" data-page="messages" role="button" tabindex="0">
+          <span class="nav-icon">✉️</span>
+          <span>Enquiries</span>
+        </a>
+        <a class="nav-item" data-page="newsletter" role="button" tabindex="0">
+          <span class="nav-icon">📰</span>
+          <span>Newsletter</span>
+        </a>
+
+        <div class="nav-section-label">System</div>
+        <a class="nav-item" data-page="settings" role="button" tabindex="0">
+          <span class="nav-icon">⚙️</span>
+          <span>Settings</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-user">
+          <div class="sidebar-avatar">A</div>
+          <div>
+            <div class="sidebar-username">Admin User</div>
+            <div class="sidebar-role">superadmin</div>
+          </div>
+        </div>
+        <button id="logout-btn" type="button">
+          <span>🚪</span> Sign Out
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="app-main">
+      <div class="concept-banner">
+        ⚠️ <strong>Concept Notice:</strong> Northgate Dental is a fictional portfolio project created by
+        <a href="https://spmanchester.com/" target="_blank" rel="noopener">SPManchester Private Limited</a>.
+        Database records and actions are functional demonstration data.
+      </div>
+
+      <header class="app-header">
+        <button id="sidebar-toggle" aria-label="Toggle Navigation Menu">☰</button>
+        <h1 id="page-title">📊 Dashboard</h1>
+        <div class="header-sep"></div>
+        <div id="header-time">00:00:00</div>
+        <div class="header-sep"></div>
+        <a href="/" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" title="Open patient website in a new tab">
+          View Website ↗
+        </a>
+      </header>
+
+      <main id="page-main" class="page-content" role="main">
+        <!-- Rendered dynamically by admin.js navigateTo() -->
+      </main>
+    </div>
+
+  </div>
+
+  <!-- Toast notifications container -->
+  <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

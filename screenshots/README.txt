@@ -1,0 +1,1 @@
+Design preview image (preview-homepage.png), generated because no headless browser is available in the build environment to capture a live screenshot. It is a labelled design preview, NOT a screenshot. Open index.html in any browser to see the real, working site.

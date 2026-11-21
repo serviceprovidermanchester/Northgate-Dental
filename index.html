@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Northgate Dental — Family & Cosmetic Dentistry in Didsbury, Manchester</title>
+<meta name="description" content="Northgate Dental, Didsbury: transparent treatment fees, gentle care for anxious patients, and a 60-second online appointment request. Book check-ups, whitening, Invisalign® and more.">
+<meta property="og:title" content="Northgate Dental — Didsbury, Manchester">
+<meta property="og:description" content="Transparent fees. 60-second appointment request. No phone queue.">
+<meta property="og:type" content="website">
+<meta name="author" content="SPManchester Private Limited — spmanchester.com">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══ DEMO BANNER ══════════════════════════════════════════════════════════ -->
+<div class="demo-banner" role="note">
+  ★ <strong>Concept / Demo</strong> — Northgate Dental is a fictional business built by
+  <a href="https://spmanchester.com/" target="_blank" rel="noopener">SPManchester</a>.
+  Backend connected — real database, real API. No live payments.
+</div>
+
+<!-- ═══ COOKIE CONSENT ════════════════════════════════════════════════════════ -->
+<div class="cookie-banner" id="cookie-banner" role="alertdialog" aria-label="Cookie consent" hidden>
+  <div class="cookie-inner">
+    <p>🍪 We use essential cookies to keep this site running. No tracking or marketing cookies.</p>
+    <div class="cookie-actions">
+      <button class="btn btn-sm btn-primary" onclick="acceptCookies()">Accept</button>
+      <button class="btn btn-sm btn-ghost" onclick="declineCookies()">Decline</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ HEADER ════════════════════════════════════════════════════════════════ -->
+<header class="site-header" role="banner" id="top">
+  <div class="wrap nav-wrap">
+    <a class="logo" href="#top" aria-label="Northgate Dental — back to top">
+      Northgate<span>Dental</span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+      <a href="#story">Our Approach</a>
+      <a href="#treatments">Treatments</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-phone" href="tel:01610000000">📞 Call us</a>
+      <a class="btn btn-nav" href="#book">Book now</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+<!-- ═══ HERO ═════════════════════════════════════════════════════════════════ -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="wrap hero-wrap">
+    <div class="hero-content">
+      <span class="pill">Healthcare · Dental Clinic · Didsbury, Manchester</span>
+      <h1 id="hero-heading">A calmer way<br>to see the dentist</h1>
+      <p class="hero-lead">Published fees for every treatment. Appointment requests in under 60 seconds. No phone queue, no surprises — open 24/7 from any device.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-white btn-lg" href="#book">Request appointment →</a>
+        <a class="btn btn-ghost-white" href="#story">How it works</a>
+      </div>
+      <div class="stats" id="hero-stats">
+        <div class="stat"><b>60 sec</b><span>to book online</span></div>
+        <div class="stat"><b id="stat-rating">4.9★</b><span>average rating</span></div>
+        <div class="stat"><b>Same-day</b><span>emergency slots</span></div>
+        <div class="stat"><b>0% APR</b><span>finance available</span></div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-card float-1">
+        <div class="hc-icon">🦷</div>
+        <div class="hc-text"><strong>Dr Patel available</strong><span>Thu 15 Jan · 09:00</span></div>
+        <span class="hc-badge open">Open</span>
+      </div>
+      <div class="hero-card float-2">
+        <div class="hc-icon">✓</div>
+        <div class="hc-text"><strong>Booking confirmed</strong><span>Ref: NGD-K7M2X</span></div>
+      </div>
+      <div class="hero-card float-3">
+        <div class="hc-icon">💎</div>
+        <div class="hc-text"><strong>Whitening from £349</strong><span>Shade guarantee</span></div>
+      </div>
+    </div>
+  </div>
+  <!-- Scroll indicator -->
+  <a class="scroll-indicator" href="#story" aria-label="Scroll to next section">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+  </a>
+</section>
+
+<!-- ═══ TRUST BAR ═════════════════════════════════════════════════════════════ -->
+<div class="trust-bar">
+  <div class="wrap trust-wrap">
+    <div class="trust-item">🏅 GDC Registered Clinicians</div>
+    <div class="trust-item">🔒 CQC Regulated Practice</div>
+    <div class="trust-item">💳 0% Finance Available</div>
+    <div class="trust-item">📞 24h Emergency Advice</div>
+    <div class="trust-item">📱 Book Online 24/7</div>
+  </div>
+</div>
+
+<!-- ═══ STORY — PROBLEM → SOLUTION ══════════════════════════════════════════ -->
+<section class="story" id="story">
+  <div class="wrap">
+    <div class="section-label">The problem we solve</div>
+    <h2>Most dental websites lose patients before they even pick up the phone</h2>
+    <p class="lead">Every clinic we build starts with a real market problem. Here is the one that drives every decision on this site.</p>
+    <div class="problem-grid">
+      <article class="problem-card problem-bad">
+        <div class="problem-icon">❌</div>
+        <h3>The old way</h3>
+        <ul>
+          <li>Reception is busy — calls go to voicemail</li>
+          <li>Fees hidden: "call for a quote"</li>
+          <li>No out-of-hours booking path</li>
+          <li>Website is a digital leaflet, zero conversion</li>
+        </ul>
+      </article>
+      <div class="problem-arrow">→</div>
+      <article class="problem-card problem-good">
+        <div class="problem-icon">✅</div>
+        <h3>The Northgate way</h3>
+        <ul>
+          <li>Published fees for every treatment — no calls needed</li>
+          <li>60-second appointment request, 24/7</li>
+          <li>Instant reference, real-time availability</li>
+          <li>Written for nervous patients — not search engines</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TREATMENTS ════════════════════════════════════════════════════════════ -->
+<section class="treatments" id="treatments">
+  <div class="wrap">
+    <div class="section-label">Transparent pricing</div>
+    <h2>Treatments &amp; published fees</h2>
+    <p class="lead">No hidden costs. All fees are sample data for this concept project — a live build shows the client's actual published prices.</p>
+
+    <!-- Filter chips -->
+    <div class="filter-chips" role="group" aria-label="Filter treatments by category">
+      <button class="chip active" data-filter="all">All treatments</button>
+      <button class="chip" data-filter="general">General</button>
+      <button class="chip" data-filter="cosmetic">Cosmetic</button>
+      <button class="chip" data-filter="restorative">Restorative</button>
+      <button class="chip" data-filter="emergency">Emergency</button>
+    </div>
+
+    <div class="treatments-grid" id="treatments-grid">
+      <!-- Populated by script.js from API -->
+      <div class="loading-spinner" aria-label="Loading treatments…">
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <p class="footnote">* Children's dentistry policy is sample data. All prices include VAT where applicable.</p>
+  </div>
+</section>
+
+<!-- ═══ WHY CHOOSE US ════════════════════════════════════════════════════════ -->
+<section class="why-us">
+  <div class="wrap">
+    <div class="section-label">Why choose us</div>
+    <h2>Dentistry the way it should be</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🤝</div>
+        <h3>No judgement</h3>
+        <p>We see patients who haven't been in years. No lectures — just a plan to get your smile healthy again at your own pace.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💷</div>
+        <h3>Transparent fees</h3>
+        <p>Every treatment price is published on this page. No surprises, no upselling. You know the cost before you sit in the chair.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📱</div>
+        <h3>Book anytime</h3>
+        <p>Our appointment request form works 24/7 from any device. No hold music, no callback requests — instant reference in 60 seconds.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🏆</div>
+        <h3>GDC registered</h3>
+        <p>All clinicians are registered with the General Dental Council and undertake continuous professional development.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💳</div>
+        <h3>0% finance</h3>
+        <p>Spread the cost of treatment over 6–24 months with our 0% APR finance option. Available on treatments over £350.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <h3>Emergency care</h3>
+        <p>Same-day emergency slots released at 8:30am daily. 24-hour dental advice line for urgent pain outside hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CLINICIANS ════════════════════════════════════════════════════════════ -->
+<section class="team" id="team">
+  <div class="wrap">
+    <div class="section-label">Meet the team</div>
+    <h2>Our clinicians</h2>
+    <p class="lead">Sample clinician profiles — a live build uses the practice's real team details.</p>
+    <div class="team-grid" id="team-grid">
+      <div class="loading-spinner"><div class="spinner"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ APPOINTMENT REQUEST FORM ══════════════════════════════════════════════ -->
+<section class="book" id="book">
+  <div class="wrap">
+    <div class="section-label">60-second booking</div>
+    <h2>Request an appointment</h2>
+    <p class="lead">Connected to a real database. Submit the form and your request is stored, a reference generated, and a confirmation email sent.</p>
+
+    <div class="book-layout">
+      <div class="book-panel">
+        <form id="booking-form" novalidate aria-label="Appointment request form">
+
+          <div class="form-step active" id="step-1">
+            <h3 class="step-title">Step 1 of 3 — Your details</h3>
+            <div class="form-grid">
+              <div class="field">
+                <label for="f-name">Full name <span class="req">*</span></label>
+                <input id="f-name" name="name" type="text" required placeholder="e.g. Sarah Ahmed" autocomplete="name">
+                <span class="field-error" id="err-name"></span>
+              </div>
+              <div class="field">
+                <label for="f-phone">Phone number <span class="req">*</span></label>
+                <input id="f-phone" name="phone" type="tel" required placeholder="07xxx xxxxxx" autocomplete="tel">
+                <span class="field-error" id="err-phone"></span>
+              </div>
+              <div class="field field-full">
+                <label for="f-email">Email address <span class="field-opt">(for confirmation)</span></label>
+                <input id="f-email" name="email" type="email" placeholder="your@email.com" autocomplete="email">
+                <span class="field-error" id="err-email"></span>
+              </div>
+            </div>
+            <div class="step-nav">
+              <button type="button" class="btn btn-primary btn-lg" onclick="goToStep(2)">Next: Choose treatment →</button>
+            </div>
+          </div>
+
+          <div class="form-step" id="step-2">
+            <h3 class="step-title">Step 2 of 3 — Treatment &amp; clinician</h3>
+            <div class="form-grid">
+              <div class="field field-full">
+                <label for="f-treatment">Treatment <span class="req">*</span></label>
+                <select id="f-treatment" name="treatment_id" required>
+                  <option value="" disabled selected>Select a treatment…</option>
+                </select>
+                <span class="field-error" id="err-treatment"></span>
+              </div>
+              <div class="field field-full">
+                <label for="f-clinician">Preferred clinician</label>
+                <select id="f-clinician" name="clinician_id">
+                  <option value="">First available</option>
+                </select>
+              </div>
+            </div>
+            <div class="step-nav">
+              <button type="button" class="btn btn-ghost" onclick="goToStep(1)">← Back</button>
+              <button type="button" class="btn btn-primary btn-lg" onclick="goToStep(3)">Next: Choose time →</button>
+            </div>
+          </div>
+
+          <div class="form-step" id="step-3">
+            <h3 class="step-title">Step 3 of 3 — Date &amp; time</h3>
+            <div class="form-grid">
+              <div class="field">
+                <label for="f-date">Preferred date <span class="req">*</span></label>
+                <input id="f-date" name="date" type="date" required>
+                <span class="field-error" id="err-date"></span>
+              </div>
+              <div class="field">
+                <label for="f-time">Preferred time <span class="req">*</span></label>
+                <select id="f-time" name="time" required>
+                  <option value="" disabled selected>Select date first…</option>
+                </select>
+                <span class="field-error" id="err-time"></span>
+              </div>
+              <div class="field field-full">
+                <label for="f-notes">Anything we should know? <span class="field-opt">(optional)</span></label>
+                <textarea id="f-notes" name="notes" rows="3" placeholder="e.g. nervous patient, specific pain, access needs…"></textarea>
+                <small class="field-hint">Do not include detailed medical history here.</small>
+              </div>
+            </div>
+            <div class="step-nav">
+              <button type="button" class="btn btn-ghost" onclick="goToStep(2)">← Back</button>
+              <button type="submit" class="btn btn-primary btn-lg" id="submit-btn">
+                <span id="submit-text">Request appointment →</span>
+                <span id="submit-spinner" class="btn-spinner" hidden></span>
+              </button>
+            </div>
+          </div>
+
+        </form>
+
+        <!-- Progress bar -->
+        <div class="step-progress">
+          <div class="step-dot active" id="dot-1" aria-label="Step 1">1</div>
+          <div class="step-line"></div>
+          <div class="step-dot" id="dot-2" aria-label="Step 2">2</div>
+          <div class="step-line"></div>
+          <div class="step-dot" id="dot-3" aria-label="Step 3">3</div>
+        </div>
+
+        <div id="booking-result" class="result" role="status" aria-live="polite" aria-atomic="true"></div>
+      </div>
+
+      <!-- Sidebar info -->
+      <aside class="book-sidebar">
+        <div class="sidebar-card">
+          <h4>🕐 Opening hours</h4>
+          <table class="hours-table">
+            <tr><td>Monday – Friday</td><td>08:30 – 18:00</td></tr>
+            <tr><td>Saturday</td><td>09:00 – 14:00</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </table>
+        </div>
+        <div class="sidebar-card">
+          <h4>📞 Need to call?</h4>
+          <p><a href="tel:01610000000" class="phone-link">0161 XXX XXXX</a></p>
+          <p class="sidebar-note">Emergency line available 24h</p>
+        </div>
+        <div class="sidebar-card">
+          <h4>📍 Find us</h4>
+          <address>42 Palatine Road<br>Didsbury<br>Manchester M20 3JH</address>
+        </div>
+        <!-- Track booking -->
+        <div class="sidebar-card">
+          <h4>🔍 Track your booking</h4>
+          <div class="track-form">
+            <input type="text" id="track-ref" placeholder="NGD-XXXXX" aria-label="Booking reference">
+            <button class="btn btn-primary btn-sm" onclick="trackBooking()">Track</button>
+          </div>
+          <div id="track-result"></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ REVIEWS ════════════════════════════════════════════════════════════════ -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="section-label">Patient stories</div>
+    <h2>What patients say</h2>
+    <p class="lead">Live reviews from the database. <em>Sample content in this demo — a live build connects to verified Google Reviews.</em></p>
+
+    <!-- Average rating bar -->
+    <div class="rating-summary" id="rating-summary">
+      <div class="rating-big" id="rating-big">—</div>
+      <div class="rating-info">
+        <div class="rating-stars" id="rating-stars">☆☆☆☆☆</div>
+        <div class="rating-count" id="rating-count">Loading reviews…</div>
+      </div>
+    </div>
+
+    <div class="reviews-grid" id="reviews-grid">
+      <div class="loading-spinner"><div class="spinner"></div></div>
+    </div>
+
+    <!-- Submit review -->
+    <div class="review-submit-box">
+      <h3>Share your experience</h3>
+      <form id="review-form" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="rv-name">Your name <span class="req">*</span></label>
+            <input id="rv-name" name="reviewer_name" type="text" required placeholder="e.g. James M.">
+          </div>
+          <div class="field">
+            <label for="rv-ref">Booking reference <span class="field-opt">(for verified badge)</span></label>
+            <input id="rv-ref" name="reference" type="text" placeholder="NGD-XXXXX">
+          </div>
+          <div class="field field-full">
+            <label>Rating <span class="req">*</span></label>
+            <div class="star-rating" id="star-rating" role="radiogroup" aria-label="Rating">
+              <button type="button" class="star" data-val="1" aria-label="1 star">★</button>
+              <button type="button" class="star" data-val="2" aria-label="2 stars">★</button>
+              <button type="button" class="star" data-val="3" aria-label="3 stars">★</button>
+              <button type="button" class="star" data-val="4" aria-label="4 stars">★</button>
+              <button type="button" class="star" data-val="5" aria-label="5 stars">★</button>
+            </div>
+            <input type="hidden" id="rv-rating" name="rating" value="">
+          </div>
+          <div class="field field-full">
+            <label for="rv-body">Your review <span class="req">*</span></label>
+            <textarea id="rv-body" name="body" rows="3" required placeholder="Tell us about your experience…"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit review</button>
+        <div id="review-result" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══════════════════════════════════════════════════════════════════ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="section-label">Common questions</div>
+    <h2>Frequently asked questions</h2>
+
+    <!-- FAQ Search -->
+    <div class="faq-search-wrap">
+      <input type="search" id="faq-search" placeholder="Search questions…" aria-label="Search FAQ">
+    </div>
+
+    <div class="faq-list" id="faq-list">
+      <details>
+        <summary>I'm a nervous patient. Can you help?</summary>
+        <div class="faq-answer"><p>Absolutely. We set aside longer first appointments for nervous patients, agree a stop-signal before we begin, and offer sedation options for more involved treatments. Note your anxiety in the booking form — we'll make sure the right clinician calls you first.</p></div>
+      </details>
+      <details>
+        <summary>How much does treatment cost?</summary>
+        <div class="faq-answer"><p>Every treatment fee is published on this page — no "call for a quote". Check-ups start from £58. Sample 0% finance is available over 6–12 months for treatments over £350.</p></div>
+      </details>
+      <details>
+        <summary>How quickly can I get an emergency appointment?</summary>
+        <div class="faq-answer"><p>Emergency slots are released at 8:30am daily. Select "Emergency care" in the booking form — these are flagged as priority. For genuine emergencies outside hours, call 111 for NHS urgent dental advice.</p></div>
+      </details>
+      <details>
+        <summary>What happens after I submit my appointment request?</summary>
+        <div class="faq-answer"><p>You receive an instant on-screen confirmation with a booking reference (NGD-XXXXX) and an email confirmation. The practice confirms your slot within 2 hours during opening hours and sends an SMS reminder 24h before.</p></div>
+      </details>
+      <details>
+        <summary>Do you offer NHS treatment?</summary>
+        <div class="faq-answer"><p>Sample content — a live build reflects the client's NHS/private status. Many Didsbury practices are mixed or private list. The booking form will confirm your options.</p></div>
+      </details>
+      <details>
+        <summary>How do I cancel or reschedule?</summary>
+        <div class="faq-answer"><p>Use the "Track your booking" panel with your NGD reference, or call us on 0161 XXX XXXX. We ask for 48 hours' notice where possible to free the slot for another patient.</p></div>
+      </details>
+      <details>
+        <summary>Is 0% finance really available?</summary>
+        <div class="faq-answer"><p>Sample content — in a live build, finance is provided via a regulated third-party lender. 0% APR available on treatments over £350, over 6–24 months, subject to status and credit check.</p></div>
+      </details>
+      <details>
+        <summary>Is my personal data safe?</summary>
+        <div class="faq-answer"><p>Your data is stored only in our secure database and used only to process your appointment. We collect the minimum personal data needed. See our Privacy Notice for full details of your UK GDPR rights.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NEWSLETTER ════════════════════════════════════════════════════════════ -->
+<section class="newsletter">
+  <div class="wrap newsletter-wrap">
+    <div class="newsletter-content">
+      <h2>Stay in the loop</h2>
+      <p>Oral health tips, special offers and practice news. No spam, unsubscribe anytime.</p>
+    </div>
+    <form id="newsletter-form" class="newsletter-form" novalidate>
+      <div class="nl-fields">
+        <input type="email" name="email" required placeholder="your@email.com" aria-label="Email address">
+        <button type="submit" class="btn btn-white">Subscribe</button>
+      </div>
+      <div id="nl-result" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ════════════════════════════════════════════════════════════════ -->
+<section class="contact" id="contact">
+  <div class="wrap contact-wrap">
+    <div class="contact-info">
+      <div class="section-label">Get in touch</div>
+      <h2>Contact us</h2>
+      <p class="lead">Have a question before booking? Send us a message and we'll reply within one business day.</p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <div class="ci-icon">📍</div>
+          <div>
+            <strong>Address</strong>
+            <address>42 Palatine Road, Didsbury<br>Manchester M20 3JH</address>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">📞</div>
+          <div>
+            <strong>Phone</strong>
+            <p><a href="tel:01610000000">0161 XXX XXXX</a> (sample)</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">✉️</div>
+          <div>
+            <strong>Email</strong>
+            <p><a href="mailto:hello@northgatedental.co.uk">hello@northgatedental.co.uk</a> (sample)</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">🕐</div>
+          <div>
+            <strong>Hours</strong>
+            <p>Mon–Fri 08:30–18:00 · Sat 09:00–14:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form-wrap">
+      <form id="contact-form" novalidate aria-label="Contact form">
+        <div class="form-grid">
+          <div class="field">
+            <label for="ct-name">Name <span class="req">*</span></label>
+            <input id="ct-name" name="name" type="text" required placeholder="Your name">
+            <span class="field-error" id="err-ct-name"></span>
+          </div>
+          <div class="field">
+            <label for="ct-email">Email <span class="req">*</span></label>
+            <input id="ct-email" name="email" type="email" required placeholder="your@email.com">
+            <span class="field-error" id="err-ct-email"></span>
+          </div>
+          <div class="field">
+            <label for="ct-phone">Phone <span class="field-opt">(optional)</span></label>
+            <input id="ct-phone" name="phone" type="tel" placeholder="07xxx xxxxxx">
+          </div>
+          <div class="field">
+            <label for="ct-subject">Subject <span class="req">*</span></label>
+            <select id="ct-subject" name="subject" required>
+              <option value="" disabled selected>Select a topic…</option>
+              <option>General enquiry</option>
+              <option>Treatment information</option>
+              <option>Fees &amp; finance</option>
+              <option>Appointment change</option>
+              <option>Emergency</option>
+              <option>Feedback / complaint</option>
+            </select>
+          </div>
+          <div class="field field-full">
+            <label for="ct-message">Message <span class="req">*</span></label>
+            <textarea id="ct-message" name="message" rows="5" required placeholder="How can we help?"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Send message →</button>
+        <div id="contact-result" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════════════════════ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">Northgate<span>Dental</span></div>
+      <p>Family &amp; cosmetic dentistry in Didsbury, Manchester.</p>
+      <p><em>Concept clinic — fictional, for portfolio demonstration.</em></p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook" title="Facebook">𝕗</a>
+        <a href="#" aria-label="Instagram" title="Instagram">📷</a>
+        <a href="#" aria-label="Google" title="Google Reviews">G</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <h4>Navigate</h4>
+      <nav>
+        <a href="#story">Our Approach</a>
+        <a href="#treatments">Treatments</a>
+        <a href="#team">Our Team</a>
+        <a href="#book">Book Appointment</a>
+        <a href="#reviews">Patient Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-treatments">
+      <h4>Treatments</h4>
+      <nav id="footer-treatments-nav">
+        <a href="#book">Check-up &amp; Hygiene</a>
+        <a href="#book">Teeth Whitening</a>
+        <a href="#book">Invisalign® Aligners</a>
+        <a href="#book">Implants &amp; Crowns</a>
+        <a href="#book">Children's Dentistry</a>
+        <a href="#book">Emergency Care</a>
+      </nav>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <address>
+        <p>📍 42 Palatine Road, Didsbury<br>Manchester M20 3JH</p>
+        <p>📞 <a href="tel:01610000000">0161 XXX XXXX</a></p>
+        <p>✉️ <a href="mailto:hello@northgatedental.co.uk">hello@northgatedental.co.uk</a></p>
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap footer-bottom-inner">
+      <p>Concept website by <a href="https://spmanchester.com/" target="_blank" rel="noopener">SPManchester Private Limited</a> — Web Design &amp; Development · Manchester</p>
+      <p>&copy; 2026 SPManchester Private Limited · <a href="#">Privacy Policy</a> · <a href="#">Cookie Policy</a> · MIT Licence</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ TREATMENT MODAL ════════════════════════════════════════════════════════ -->
+<div class="modal" id="treatment-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal-backdrop" onclick="closeModal()"></div>
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<!-- ═══ TOAST NOTIFICATION ════════════════════════════════════════════════════ -->
+<div id="toast" class="toast" role="alert" aria-live="assertive" hidden></div>
+
+<!-- ═══ BACK TO TOP ═══════════════════════════════════════════════════════════ -->
+<button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top" hidden>↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
